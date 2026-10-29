@@ -1,0 +1,22 @@
+name: badges
+
+# 每天更新顶部的 WakaTime 时长和 GitHub 贡献数
+on:
+  schedule:
+    - cron: '17 0 * * *'  # 北京时间 08:17
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/badges.py
+      - run: |
+          git add assets/badges
+          git diff --cached --quiet && exit 0
+          git -c user.name='github-actions[bot]' -c user.email='41898299+github-actions[bot]@users.noreply.github.com' commit -m 'chore: 更新徽章数据'
+          git push

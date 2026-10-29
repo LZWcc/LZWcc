@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="214" height="30" viewBox="0 0 214 30">
+<style>text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif}</style>
+<rect x="0.5" y="0.5" width="213" height="29" rx="14.5" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(12 8)" fill="none" stroke="#2da44e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="2.6"/><path d="M1.5 8h3.9M10.6 8h3.9"/></g>
+<text x="33" y="19.5" font-size="12" fill="#59636e">GitHub</text>
+<text x="77.5" y="19.5" font-size="13" font-weight="600" fill="#1f2328">1,648 contributions</text>
+</svg>
